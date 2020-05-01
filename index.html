@@ -1,0 +1,138 @@
+<!doctype HTML>
+<html>
+  <head>
+ <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+   </head>
+   <!-- ------------------------------------------------------- -->
+  	<body style="margin : 0px; overflow: hidden;">
+    	<a-scene embedded arjs="sourceType: webcam;">
+        
+        
+        <!--
+        <a-entity>
+        <a-box position="0 0.5 0" material="opacity: 1;"></a-box>      
+        <a-marker-camera preset="hiro"></a-marker-camera>
+        </a-entity>-->
+      
+         <a-assets>
+            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/racpsjcsp/HTML-CSS-Javascript/master/dog.gltf"></a-asset-item>
+         </a-assets>
+        
+         <!--
+         <a-entity readership
+                gltf-model="#animated-asset"
+                position = "0 0.5 0"
+                rotation="-50 -50 50"
+                scale="1 1 1">
+          </a-entity>-->
+        
+        
+      <!--
+       <a-marker-camera id="marcador_a" url="https://raw.githubusercontent.com/racpsjcsp/HTML-CSS-Javascript/master/marcador_a.patt" type="pattern"></a-marker-camera>  
+       <a-entity animal-scene>         
+       </a-entity>-->
+       
+        
+       
+       <a-marker id="marcador_a" type="pattern" 
+                 url="https://raw.githubusercontent.com/racpsjcsp/HTML-CSS-Javascript/master/marcador_a.patt" registerevents>
+          <a-entity readership
+                gltf-model="#animated-asset"
+                position = "0 0.5 0"
+                rotation="-50 -50 50"
+                scale="1 1 1">
+          </a-entity>
+        </a-marker>-
+        
+        
+        
+        <a-marker preset="hiro">
+        <a-box position="0 0.5 0" material="opacity: 1;"></a-box>
+        </a-marker>
+      
+        <a-entity camera></a-entity>  
+
+      </a-scene>
+  
+      <script>
+       
+       // A $( document ).ready() block.
+        $( document ).ready(function() {
+          
+          /*
+           const aController = document.querySelector("a-scene").systems.arjs._arSession.arContext.arController;
+          aController.addEventListener("getMarker", (evt) => {
+              const markerType = evt.data.type;
+              const patternType = 0;
+              console.log("onMarkerFound!!");
+
+              if (markerType == patternType) {
+                  console.log("onMarkerFound out pattern!!");
+
+                  //Do stuff...
+              }
+          }); */
+          
+          
+          
+          /*
+          AFRAME.registerComponent('markers_start',{
+              init:function(){
+                console.log('Add markers to the scene');
+
+                  var sceneEl = document.querySelector('a-scene');
+                
+                  var markerEl = document.createElement('a-marker');
+                  markerEl.setAttribute('type','pattern');
+                  markerEl.setAttribute('url','https://raw.githubusercontent.com/racpsjcsp/HTML-CSS-Javascript/master/marcador_a.patt');
+                  markerEl.setAttribute('id','marcador_a');
+                  markerEl.setAttribute('registerevents','');
+                  sceneEl.appendChild(markerEl);
+                
+                  var animalEl = document.createElement('a-entity');
+                    animalEl.setAttribute('position', {x: 0, y:0.5, z: 0});
+                    //animalEl.setAttribute('scale', {x: 0, y:0, z: 0 });
+                    animalEl.setAttribute('gltf-model', "#animated-asset");
+                    animalEl.setAttribute('rotation', {x: -50, y:-50, z: 50 });
+                    //globeEl.setAttribute('geometry', {radius: 0.5 });
+                    markerEl.appendChild(animalEl);
+
+              }
+          }); */
+          
+          
+          AFRAME.registerComponent ('registerevents', {
+              init: function () {
+                var marker = this.el.object3D;
+                console.log(marker);
+                
+                //marker.setAttribute('emitevents', 'true');
+                marker.addEventListener('markerFound', function () {
+                  var markerId = marker.id;
+                  console.log ('markerFound', markerId);
+                  window.open("www.google.com.br","_blank")
+                });
+                
+                
+                
+                marker.addEventListener('markerLost', function() {
+                      var markerId = marker.id;
+                      console.log('markerLost', markerId);
+                });
+                
+                
+              }
+          });
+      
+          
+          
+        });       
+
+    </script>
+    	
+</body>
+</html>
