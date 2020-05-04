@@ -69,10 +69,8 @@
               const markerType = evt.data.type;
               const patternType = 0;
               console.log("onMarkerFound!!");
-
               if (markerType == patternType) {
                   console.log("onMarkerFound out pattern!!");
-
                   //Do stuff...
               }
           }); */
@@ -83,7 +81,6 @@
           AFRAME.registerComponent('markers_start',{
               init:function(){
                 console.log('Add markers to the scene');
-
                   var sceneEl = document.querySelector('a-scene');
                 
                   var markerEl = document.createElement('a-marker');
@@ -100,7 +97,6 @@
                     animalEl.setAttribute('rotation', {x: -50, y:-50, z: 50 });
                     //globeEl.setAttribute('geometry', {radius: 0.5 });
                     markerEl.appendChild(animalEl);
-
               }
           }); */
           
