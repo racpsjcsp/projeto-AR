@@ -1,6 +1,6 @@
 # Projeto AR
-Projeto desenvolvido para a matéria de Engenharia de Software III do curso de Análise e Desenvolvimento de Sistemas - Fatec São José dos Campos SP.
-Trata-se de um jogo voltado para a alfabetização de crianças, utilizando tecnologia de Realidade Aumentada (AR).
+- Projeto desenvolvido para a matéria de Engenharia de Software III do curso de Análise e Desenvolvimento de Sistemas - Fatec São José dos Campos SP.
+- Trata-se de um jogo voltado para a alfabetização de crianças, utilizando tecnologia de Realidade Aumentada (AR).
 O projeto foi feito através de ferramentas disponíveis em: https://github.com/AR-js-org/AR.js.
 
 ### Alunos
