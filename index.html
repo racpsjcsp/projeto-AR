@@ -6,8 +6,6 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
-    
-    <script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
 
     <script>
     AFRAME.registerComponent('registerevents', {
@@ -21,11 +19,15 @@
                   var markerId = marker.id;
                   console.log('markerFound', markerId);
                   
+                  /*
+                  
                   setTimeout(function(){ 
                     var result = prompt("Qual o nome da figura mostrada?", "");
                   }, 3000);
-          
-                  // TODO: Add your own code here to react to the marker being found.
+                  
+                  */                  
+                  
+
                 });
 
                 marker.addEventListener('markerLost', function() {
@@ -49,7 +51,7 @@
       <div id="htmlElement" style="background: #F8F8F8; color: #333; font-size: 48px">Placar: 0 pontos</div>
       </div>
 
-    	<a-scene embedded arjs="sourceType: webcam;" style="height:600px;" markers_start> 
+    	<a-scene embedded arjs="sourceType: webcam;" markers_start> 
         
               
         
@@ -62,84 +64,104 @@
          <a-assets>
            
            <!--
-            <a-asset-item id="model_Y" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/cachorro.gltf"></a-asset-item>
+            
             <a-asset-item id="model_G" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/cat.gltf"></a-asset-item>
-            <a-asset-item id="model_Z" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/zebra.gltf"></a-asset-item>
+            
             
            -->
-           <a-asset-item id="model_T" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/turtle.gltf"></a-asset-item>
-           <a-asset-item id="model_A" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/BlackBear.gltf"></a-asset-item>
-           <a-asset-item id="model_C" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/cat.gltf"></a-asset-item>
+           <a-asset-item id="model_Z" position="0 0.5 0" scale="0.1 0.1 0.1" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/Zebra.gltf"></a-asset-item>
+           <a-asset-item id="model_T" position="0 0.5 0" scale="0.1 0.1 0.1" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/turtle.gltf"></a-asset-item>
+           <a-asset-item id="model_U" position="0 0.5 0" scale="0.1 0.1 0.1" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/BlackBear.gltf"></a-asset-item>
+           <a-asset-item id="model_G" position="0 0.5 0" scale="0.1 0.1 0.1" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/cat.gltf"></a-asset-item>
+           <a-asset-item id="model_C" position="0 0.5 0" scale="1.5 1.5 1.5" src="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/3d-models/cachorro.gltf"></a-asset-item>
            
-         </a-assets>
+         </a-assets>        
         
-        
-        
-         
+         <!--
          <a-entity 
-                gltf-model="#model_A"
-                position="0.5 0.5 0.1"
-                scale="0.3 0.1 0.1"
-                rotation="-50 -50 0" >
+                gltf-model="#model_C"
+                position="0 -0.5 -5"
+                scale="1 1 1"
+                rotation="0 50 5" >
           </a-entity>
-        
+        -->
         
       <!--
        <a-marker-camera id="marcador_a" url="https://raw.githubusercontent.com/racpsjcsp/HTML-CSS-Javascript/master/marcador_a.patt" type="pattern"></a-marker-camera>  
        <a-entity animal-scene>         
        </a-entity>-->
        
-       
        <!--
+       
        <a-marker id="marcador_a" type="pattern" 
                  url="https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/marcadores/MarcadorA.patt" registerevents>
-          <a-entity readership 
-                gltf-model="#model_U"
-                position = "0 0.5 0"
-                rotation="-50 -50 50"
-                scale="1 1 1"
-                    >
+          <a-entity 
+                gltf-model="#model_A"
+                position="0 -0.5 -5"
+                scale="0.1 0.1 0.1"
+                rotation="0 50 5" >
           </a-entity>
-        </a-marker>-->
+         
+        </a-marker> -->
         
         
         
         <a-marker preset="hiro" registerevents>
         <a-box position="0 0.5 0" material="opacity: 1;"></a-box>
-        </a-marker>
-      
+        </a-marker>      
         <a-entity camera>       
         </a-entity>  
       
 
       </a-scene>
       
-      <a-scene embedded>
-      <a-entity geometry="primitive: box" material="shader: html; target: #htmlElement"></a-entity>
-      </a-scene>
         
       <script>
        
        // A $( document ).ready() block.
         $( document ).ready(function() {
-        
+         
+          
           
           AFRAME.registerComponent('markers_start',{
               init:function(){
                   console.log('Add markers to the scene');
-                  var sceneEl = document.querySelector('a-scene');                  
-                  var alfa = "ABCDEFGHIJKLMNOPQRSTUVXZ"
+                  var sceneEl = document.querySelector('a-scene');    
+                  var alfa = "ZTUGC"
+                  //var alfa = "A"
                   for (var i in alfa) {
                       var markerEl = document.createElement('a-marker');
+                      var assetEl =  document.getElementById('model_'+ alfa[i]);   
+                      position = {
+                       x: parseFloat(assetEl.attributes[1].value.split(" ")[0]),
+                       y: parseFloat(assetEl.attributes[1].value.split(" ")[1]),
+                       z: parseFloat(assetEl.attributes[1].value.split(" ")[2])                        
+                      }
+                    
+                      scale = {
+                        x: parseFloat(assetEl.attributes[2].value.split(" ")[0]),
+                        y: parseFloat(assetEl.attributes[2].value.split(" ")[1]),
+                        z: parseFloat(assetEl.attributes[2].value.split(" ")[2])
+                      }
                       var markerLink = "https://raw.githubusercontent.com/racpsjcsp/projeto-AR/master/assets/marcadores/Marcador" + alfa[i] + ".patt"
                       markerEl.setAttribute('type','pattern');
                       markerEl.setAttribute('url',markerLink);
                       markerEl.setAttribute('id','marcador_'+ alfa[i]);
                       markerEl.setAttribute('registerevents','');                    
-                      markerEl.setAttribute('position', {x: 0, y: 0.5, z: 0});
-                      markerEl.setAttribute('scale', {x: 1, y:1, z: 1});
-                      markerEl.setAttribute('gltf-model', "#model_" + alfa[i]);
-                      markerEl.setAttribute('rotation', {x: -50, y:-50, z: 50 });
+                      // markerEl.setAttribute('position', {x: -10, y: 0.5, z: -5});
+                      // markerEl.setAttribute('position', position);
+                      // markerEl.setAttribute('scale', {x: -0, y: 0.1, z: 0.1});
+                      // markerEl.setAttribute('gltf-model', "#model_" + alfa[i]);
+                      // markerEl.setAttribute('rotation', {x: -90, y: -90, z: 0 });
+                    
+                      // create entity for marker 
+                      var entityEl = document.createElement('a-entity');
+                      // entityEl.setAttribute('position', {x: 0, y: 0.5, z: 0});
+                      entityEl.setAttribute('position', position);
+                      entityEl.setAttribute('scale', scale);
+                      entityEl.setAttribute('gltf-model', "#model_" + alfa[i]);
+                      //entityEl.setAttribute('rotation', {x: 0, y: 0, z: 0 });                      
+                      markerEl.appendChild(entityEl);  
                       sceneEl.appendChild(markerEl);                    
                   } 
               }
