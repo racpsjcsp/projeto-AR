@@ -4,8 +4,11 @@
 O projeto foi feito através de ferramentas disponíveis em: https://github.com/AR-js-org/AR.js.
 
 ### Alunos
-- Paulo Henrique Ribeiro Lourenço
-- Rafael Augusto Campos Plinio
+- Rafael Augusto Campos Plinio - RA: 1460481721065
+- Paulo Henrique Ribeiro Lourenço - RA: 
+
+### Professor
+-Giuliano Araujo Bertoti
 
 ### Tecnologias
 Este projeto utiliza:
@@ -13,7 +16,7 @@ Este projeto utiliza:
 * Javascript
 * AR.js
 
-### Instalação
+### Como Usar
 
 - Acesse: https://racpsjcsp.github.io/projeto-AR/index.html;
 - Clique para PERMITIR o uso da camera;
