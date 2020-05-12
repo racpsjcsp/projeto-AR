@@ -8,7 +8,7 @@ O projeto foi feito através de ferramentas disponíveis em: https://github.com/
 - Paulo Henrique Ribeiro Lourenço - RA: 
 
 ### Professor
--Giuliano Araujo Bertoti
+- Giuliano Araujo Bertoti
 
 ### Tecnologias
 Este projeto utiliza:
