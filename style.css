@@ -1,0 +1,96 @@
+
+body {
+  background-image: url("https://cdn.glitch.com/7e0373f4-abcc-4df5-81f3-b3b0450590e1%2Fbg-AR.jpg?v=1591148658264");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+progress {
+  background: #f15bb5;
+  height: 20px;
+  radius: 50px;
+  width: 100%;
+}
+
+
+progress::-webkit-progress-value {
+    background: linear-gradient(to right, #dd3e54, #6be585); /* Chrome 10-25, Safari 5.1-6 */
+   
+}
+
+#placar {
+  font-size: 40px;
+  color: black;
+  font-family: 'Indie Flower';
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.pergunta {
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Indie Flower'
+}
+
+.resposta {
+  text-align: center;
+	width: 30%;
+	margin: 20px auto;
+}
+
+#resposta_label {
+  text-align: center;
+	font-size: 30px;
+	font-family: 'Indie Flower';
+  font-weight: bold;
+}
+
+input {
+	width: 350px;
+	text-align: center;
+	font-family: 'Indie Flower';
+	font-size: 30px;
+	background-color: lightblue;
+	font-weight: bold;
+  border-radius: 10px;
+}
+
+.botao-enviar {
+	width: 30%;
+	margin: 20px auto;
+  text-align: center;
+}
+  
+#botao-enviar, #botao-reiniciar {	
+	height: 50px;	
+  width: 200px;
+	background-color: lightgreen;
+	font-family: 'Indie Flower';
+	font-weight: bold;
+	font-size: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#botao-reiniciar {	
+	height: 50px;	
+  width: 200px;
+	background-color: #FFF68F;
+	font-family: 'Indie Flower';
+	font-weight: bold;
+	font-size: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+  
+#tempo {
+  font-family: 'Indie Flower';
+  font-weight: bold;
+	font-size: 30px;
+  margin-top: 10px;
+}
