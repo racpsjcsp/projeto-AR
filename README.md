@@ -2,7 +2,7 @@
 - Projeto desenvolvido para a matéria de Engenharia de Software III do curso de Análise e Desenvolvimento de Sistemas - Fatec São José dos Campos SP.
 - Trata-se de um jogo voltado para a alfabetização de crianças, utilizando tecnologia de Realidade Aumentada (AR).
 O projeto foi feito através de ferramentas disponíveis em: https://github.com/AR-js-org/AR.js.
-
+- O jogador exibe o marcador para a camera (ler Como Usar) e terá 60 segundos para responder. Ao término da contagem saberá se acertou ou errou e pontos serão deduzidos (caso errado) do seu placar. Chegando em 0 pontos é game over!
 ### Alunos
 - Rafael Augusto Campos Plinio - RA: 1460481721065 
 
