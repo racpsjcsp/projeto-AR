@@ -4,8 +4,7 @@
 O projeto foi feito através de ferramentas disponíveis em: https://github.com/AR-js-org/AR.js.
 
 ### Alunos
-- Rafael Augusto Campos Plinio - RA: 1460481721065
-- Paulo Henrique Ribeiro Lourenço - RA: 
+- Rafael Augusto Campos Plinio - RA: 1460481721065 
 
 ### Professor
 - Giuliano Araujo Bertoti
