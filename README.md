@@ -24,6 +24,10 @@ Este projeto utiliza:
 
 ![](demo.gif)
 
++=+=+=+=+=+=+=+=+
+
+![Alt text](/relative/path/to/interface.png?raw=true "interface")
+
 ### Recomendação
 - Navegador: Safari ou Chrome.
 
