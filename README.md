@@ -29,7 +29,7 @@ Este projeto utiliza:
 
 ### Todos
 
- - Adicionar mais imagens e marcadores, utilizando todas as letras do alfabeto.
+ - Adicionar mais imagens aos marcadores que não possuem, utilizando todas as letras do alfabeto.
 
 License
 ----
