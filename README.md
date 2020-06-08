@@ -26,7 +26,7 @@ Este projeto utiliza:
 
 +=+=+=+=+=+=+=+=+
 
-![Alt text](/relative/path/to/interface.png?raw=true "interface")
+![Alt text](interface.png?raw=true "interface")
 
 ### Recomendação
 - Navegador: Safari ou Chrome.
