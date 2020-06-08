@@ -37,7 +37,7 @@ A ideia é o usuário ir passando os marcadores pela mesa para exibir um novo an
 
 ### Recomendação
 - Navegadores testados: Safari, Chrome.
-OBS: Deve funcionar também no Firefox.
+- OBS: Deve funcionar também no Firefox.
 
 ### Todos
 
