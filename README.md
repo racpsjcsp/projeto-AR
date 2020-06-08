@@ -22,6 +22,13 @@ Este projeto utiliza:
 - Opção 1 - Utilize o celular com os marcadores disponíveis para download: https://bit.ly/35Q4Zux;
 - Opção 2 - Imprima os marcadores em um papel, podendo ser transformados em pequenos cartões contendo as imagens (como se fossem cartas de um baralho).
 
+A ideia é o usuário ir passando os marcadores pela mesa para exibir um novo animal ou objeto correspondente com a letra do marcador, e então digitar o nome da figura mostrada na tela.
+
+### Regras
+
+- Pontuação começa em 100 e vai diminuindo 10 pontos toda vez que o usuário erra o nome da figura, 0 é game over.
+- O usuário tem 60 segundos para pensar na resposta, se não digitar nada são -10 pontos
+
 ![](demo.gif)
 
 +=+=+=+=+=+=+=+=+
@@ -29,7 +36,8 @@ Este projeto utiliza:
 ![Alt text](interface.png?raw=true "interface")
 
 ### Recomendação
-- Navegador: Safari ou Chrome.
+- Navegadores testados: Safari, Chrome.
+OBS: Deve funcionar também no Firefox.
 
 ### Todos
 
