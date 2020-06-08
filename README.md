@@ -24,12 +24,16 @@ Este projeto utiliza:
 
 ![](demo.gif)
 
++=+=+=+=+=+=+=+=+
+
+![Alt text](/relative/path/to/interface.png?raw=true "interface")
+
 ### Recomendação
 - Navegador: Safari ou Chrome.
 
 ### Todos
 
- - Adicionar mais imagens e marcadores, utilizando todas as letras do alfabeto.
+ - Adicionar mais imagens aos marcadores que não possuem, utilizando todas as letras do alfabeto.
 
 License
 ----
