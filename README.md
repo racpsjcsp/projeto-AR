@@ -22,6 +22,8 @@ Este projeto utiliza:
 - Opção 1 - Utilize o celular com os marcadores disponíveis para download: https://bit.ly/35Q4Zux;
 - Opção 2 - Imprima os marcadores em um papel, podendo ser transformados em pequenos cartões contendo as imagens (como se fossem cartas de um baralho).
 
+![](demo.gif)
+
 ### Recomendação
 - Navegador: Safari ou Chrome.
 
