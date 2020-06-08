@@ -31,7 +31,7 @@ A ideia é o usuário ir passando os marcadores pela mesa para exibir um novo an
 
 ![](demo.gif)
 
-+=+=+=+=+=+=+=+=+
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+=+=+
 
 ![Alt text](interface.png?raw=true "interface")
 
